@@ -1,0 +1,102 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Apoio ao Estudante - Conscientização e Respeito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Apoio Estudantil</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#escuta">Portal de Escuta</a></li>
+                <li><a href="#quiz">Quiz Interativo</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+        <div class="acessibilidade">
+            <button id="btn-tema" title="Alternar Modo Escuro">🌙 Modo Escuro</button>
+            <button id="btn-fonte" title="Aumentar Fonte">A+</button>
+        </div>
+    </header>
+
+    <section id="inicio" class="secao hero">
+        <div class="conteudo-hero">
+            <h2>Portal de Apoio ao Estudante</h2>
+            <p class="mensagem-acolhimento">
+                Bem-vinda e bem-vindo! Este espaço foi criado para promover o respeito, a empatia e a segurança de todas as estudantes. Se você precisa de orientação ou quer entender melhor como combater a violência contra a mulher no ambiente escolar, você está no lugar certo. Você não está sozinha.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Estudantes conversando e se apoiando em ambiente escolar" class="imagem-destaque">
+        </div>
+    </section>
+
+    <section id="escuta" class="secao">
+        <h2>Portal de Escuta</h2>
+        <p>Um espaço seguro para refletir e desabafar. Sinta-se à vontade para escrever o que está sentindo.</p>
+        
+        <form id="form-escuta" class="card-form">
+            <label for="mensagem">Escreva seu desabafo ou mensagem abaixo:</label>
+            <textarea id="mensagem" rows="5" placeholder="Digite aqui sua mensagem..." required></textarea>
+            <button type="submit" class="btn-enviar">Enviar Desabafo</button>
+        </form>
+
+        <div id="resposta-escuta" class="resposta-escuta escondido"></div>
+
+        <div class="orientacoes">
+            <h3>Precisa de ajuda na escola?</h3>
+            <p>Se você ou alguém que você conhece está passando por uma situação difícil, procure um adulto de confiança:</p>
+            <ul>
+                <li>Professores e pedagogos da escola</li>
+                <li>Equipe da Direção escolar</li>
+                <li>Familiares ou responsáveis</li>
+                <li><strong>Ligue 180:</strong> Central de Atendimento à Mulher (Serviço gratuito e confidencial)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="quiz" class="secao">
+        <h2>Quiz Interativo: Conscientização e Prevenção</h2>
+        <p>Teste seus conhecimentos sobre o combate à violência contra a mulher no ambiente escolar.</p>
+
+        <div id="container-quiz" class="card-quiz">
+            </div>
+
+        <button id="btn-submeter-quiz" class="btn-enviar">Verificar Respostas</button>
+        <div id="resultado-quiz" class="resultado-quiz"></div>
+    </section>
+
+    <section id="referencias" class="secao">
+        <h2>Referências e Fontes de Pesquisa</h2>
+        <p>Acesse conteúdos confiáveis para aprender mais sobre direitos, prevenção e acolhimento:</p>
+        <ul class="lista-referencias">
+            <li>
+                <a href="https://www.gov.br/mulheres/pt-br" target="_blank" rel="noopener">Ministério das Mulheres - Governo Federal</a>
+            </li>
+            <li>
+                <a href="https://www.institutomariadapenha.org.br/" target="_blank" rel="noopener">Instituto Maria da Penha</a>
+            </li>
+            <li>
+                <a href="https://www.unicef.org/brazil/" target="_blank" rel="noopener">UNICEF Brasil - Proteção e Direitos das Meninas</a>
+            </li>
+            <li>
+                <a href="https://www.politize.com.br/violencia-contra-a-mulher/" target="_blank" rel="noopener">Politize! - Tipos de Violência Contra a Mulher</a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; Portal de Apoio ao Estudante. Projeto Educacional sem fins lucrativos.</p>
+        <button id="btn-topo" title="Voltar ao topo">↑ Topo</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
